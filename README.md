@@ -1,4 +1,4 @@
-#cordova-sim-plugin
+### cordova-sim-plugin
 
 这个插件是获取sim卡信息的，例如运营商，国家代码等。
 
