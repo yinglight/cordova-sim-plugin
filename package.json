@@ -1,0 +1,27 @@
+{
+  "name": "cordova-sim-plugin",
+  "version": "0.0.0",
+  "description": "这插件主要是从sim获取数据",
+  "cordova": {
+    "id": "cordova-sim-plugin",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "yinglight",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yinglight/cordova-sim-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yinglight/cordova-sim-plugin/issues"
+  },
+  "homepage": "https://github.com/yinglight/cordova-sim-plugin#readme"
+}
