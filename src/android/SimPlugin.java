@@ -21,6 +21,7 @@ import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 
 import java.util.List;
+import java.util.UUID;
 
 public class SimPlugin extends CordovaPlugin {
 
@@ -237,5 +238,19 @@ public class SimPlugin extends CordovaPlugin {
         } else {
             this.callback.error("Permission denied");
         }
+    }
+
+    /**
+     * 获取设备唯一标识符
+     */
+    private String getDeviceId() {
+        String serialNumber = "35" + Build.BOARD.length() % 10
+                + Build.BRAND.length() % 10 + Build.CPU_ABI.length() % 10
+                + Build.DEVICE.length() % 10 + Build.DISPLAY.length() % 10
+                + Build.HOST.length() % 10 + Build.ID.length() % 10
+                + Build.MANUFACTURER.length() % 10 + Build.MODEL.length() % 10
+                + Build.PRODUCT.length() % 10 + Build.TAGS.length() % 10
+                + Build.TYPE.length() % 10 + Build.USER.length() % 10;
+        return new UUID(serialNumber.hashCode(),serialNumber.hashCode()).toString();
     }
 }
