@@ -11,7 +11,7 @@
             </feature>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml" />
-        <source-file src="src/android/SimPlugin.java" target-dir="src/com/valley/sim/SimPlugin" />
+        <source-file src="src/android/SimPlugin.java" target-dir="src/com/valley/sim" />
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.READ_PHONE_STATE" />
         </config-file>
